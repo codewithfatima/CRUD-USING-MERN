@@ -1,0 +1,144 @@
+/* @import "tailwindcss";
+
+.Header{
+    background-color: rgb(47, 44, 44);
+    color: white;
+    display: flex;
+    padding: 20px;
+    padding-left: 2rem;
+    justify-content: space-between;
+
+}
+
+span{
+    color: rgb(188, 191, 194);
+}
+
+.heading{
+    font-size: 1.4rem;
+    font-family:sans-serif;
+    margin-top: .5rem;
+}
+
+.search {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 20px; 
+    padding: 5px; 
+}
+
+.setting{
+    color: rgb(191, 196, 201);
+    margin-top: .7rem;
+    margin-right: 2rem;
+}
+.search-icon{
+    margin-top: .2rem; 
+    margin: .5rem;
+    color: rgb(191, 196, 201);
+}
+
+input{
+    text-decoration: none;
+    outline: none;
+}
+
+.place{
+    display: flex;
+}
+.place-icon{
+    color: rgb(137, 139, 141);
+    margin-top: 1rem;
+    margin-right: 5px;
+}
+.heading{
+    font-size: 3rem;
+}
+.main{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.container{
+    border: 1px solid white;
+    width: 340px;
+    padding: 10px 19px;
+    margin-left: 3rem;
+    height: 260px;
+
+}
+ */
+
+
+ /* Basic Styles */
+.app {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hamburger Button */
+  .men {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above the menu */
+  }
+  
+  /* Menu Styles */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: yellow;
+    transition: left 0.5s ease;
+    padding: 20px;
+    z-index: 999; /* Ensure menu is above content */
+  }
+  
+  .menu.activeMenu {
+    left: 0; /* Menu is visible when activeMenu class is added */
+  }
+  
+  /* Menu List Styles */
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (min-width: 768px) {
+    .men {
+      display: none; /* Hide hamburger button on larger screens */
+    }
+  
+    .menu {
+      position: static;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      transition: none;
+    }
+  
+    .menu ul {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .menu ul li {
+      padding: 0;
+      border: none;
+    }
+  }
+  
